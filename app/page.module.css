@@ -1,0 +1,15 @@
+.text {
+  color: red;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.Layout {
+  max-width: 960px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
