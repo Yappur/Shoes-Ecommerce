@@ -4,6 +4,7 @@ interface Shoes {
   size: number;
   color: string;
   image: string;
+  price?: string;
   offer: boolean;
 }
 
@@ -14,6 +15,7 @@ export const ShoesMock: Shoes[] = [
     size: 42,
     color: "negro",
     image: "/vans.webp",
+    price: "600",
     offer: true,
   },
   {
@@ -22,6 +24,7 @@ export const ShoesMock: Shoes[] = [
     size: 44,
     color: "negro",
     image: "/nike.jpg",
+    price: "800",
     offer: false,
   },
   {
@@ -30,6 +33,7 @@ export const ShoesMock: Shoes[] = [
     size: 43,
     color: "blanco",
     image: "/adidas.jpg",
+    price: "600",
     offer: true,
   },
   {
@@ -38,6 +42,7 @@ export const ShoesMock: Shoes[] = [
     size: 41,
     color: "negro",
     image: "/converse.jpg",
+    price: "800",
     offer: false,
   },
 ];

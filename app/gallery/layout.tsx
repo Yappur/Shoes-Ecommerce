@@ -7,29 +7,27 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-wrap  gap-10 pl-5 ">
-      <aside className="bg-gray-600 h-[600px] p-4 rounded-b-2xl text-white">
-        <h4 className="text-3xl font-bold m-3">Zapatillas</h4>
+    <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-6 p-4 lg:p-6">
+      <aside className="bg-gray-600 p-4 rounded-lg text-white h-fit lg:sticky lg:top-6">
+        <h4 className="text-2xl font-bold mb-4">Zapatillas</h4>
         <nav>
-          <ul className="px-2 space-y-1.5">
+          <ul className="space-y-2">
             <li>
-              <MenuLink href="/gallery">{"> "}Galería</MenuLink>{" "}
+              <MenuLink href="/gallery">{"> "}Galería</MenuLink>
             </li>
             {ShoesMock.map((shoe) => (
               <li key={shoe.id}>
-                <Suspense fallback={<span>Loading...</span>}>
-                  <MenuLink key={shoe.id} href={`/gallery/${shoe.id}`}>
-                    {"> "}
-                    {shoe.name}
-                  </MenuLink>
-                </Suspense>
+                <MenuLink href={`/gallery/${shoe.id}`}>
+                  {"> "}
+                  {shoe.name}
+                </MenuLink>
               </li>
             ))}
           </ul>
         </nav>
       </aside>
 
-      <main>{children}</main>
+      <main className="min-w-0">{children}</main>
     </div>
   );
 }
