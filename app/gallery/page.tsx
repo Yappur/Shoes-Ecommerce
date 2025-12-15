@@ -1,3 +1,4 @@
+import Card from "@/components/Card";
 import { ShoesMock } from "@/data/data";
 import Link from "next/link";
 
@@ -33,17 +34,7 @@ export default async function Gallery({
         - Si offer = true: solo devuelve las que tienen shoe.offer = true 
         Esta es una técnica de cortocircuito: (!offer || shoe.offer) */}
       <ul>
-        {ShoesMock.filter((shoe) => !offer || shoe.offer).map((shoe) => (
-          <li key={shoe.id}>
-            <Link href={`/gallery/${shoe.id}`}>
-              {" "}
-              <h3 className="text-xl font-semibold hover:text-amber-500">
-                {"-> "}
-                {shoe.name}
-              </h3>
-            </Link>
-          </li>
-        ))}
+        <Card searchParams={searchParams} />
       </ul>
     </main>
   );
