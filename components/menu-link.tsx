@@ -13,7 +13,7 @@ export function MenuLink({ children, href }: MenuLinkProps) {
   return (
     <nav className="text-white flex gap-5">
       <Link
-        className="hover:text-yellow-300 active:text-yellow-500"
+        className="hover:text-yellow-300 active:text-yellow-500 transform transition-colors duration-200"
         href={href}
         data-activate={pathname === href}
       >

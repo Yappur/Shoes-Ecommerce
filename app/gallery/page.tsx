@@ -20,7 +20,7 @@ export default async function Gallery({
 
   return (
     <main>
-      <section className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] font-(--font-gothik) mb-12">
+      <section className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] font-(--font-gothik)  mb-12">
         {/* Imagen de fondo */}
         <div className="absolute inset-0 w-full h-full">
           <Image
@@ -34,10 +34,10 @@ export default async function Gallery({
 
         {/* Contenido superpuesto */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 md:px-8">
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-winered mb-4 md:mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-(--font-gothik) text-winered mb-4 md:mb-6">
             Domina el juego
           </h1>
-          <h2 className="text-sm md:text-base lg:text-lg text-white mb-6 md:mb-8 max-w-2xl">
+          <h2 className="text-sm md:text-base  lg:text-lg text-white mb-6 md:mb-8 max-w-2xl">
             La colección definitiva de zapatillas "Fresh Style" ya disponible.
           </h2>
           <Button>Comprar Ahora</Button>

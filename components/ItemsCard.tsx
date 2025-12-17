@@ -25,7 +25,7 @@ export default async function ItemsCard({
                 <Image
                   src={shoe.image || "/placeholder.svg"}
                   alt={shoe.name}
-                  fill // fill hace que la imagen llene todo el contenedor
+                  fill
                   className="object-contain"
                 />
               </div>

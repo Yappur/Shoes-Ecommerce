@@ -24,7 +24,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         <span className="absolute top-0 right-0 w-2 h-2 bg-transparent border-b-2 border-l-2 border-winered" />
         <span className="absolute bottom-0 left-0 w-2 h-2 bg-transparent border-t-2 border-r-2 border-winered" />
         <span className="absolute bottom-0 right-0 w-2 h-2 bg-transparent border-t-2 border-l-2 border-winered" />
-        <span className="relative text-xl">{children}</span>
+        <span className="relative text-xl ">{children}</span>
       </button>
     );
   }
